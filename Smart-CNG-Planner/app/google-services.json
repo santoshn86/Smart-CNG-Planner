@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "196407911006",
+    "project_id": "cng-project-86555",
+    "storage_bucket": "cng-project-86555.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196407911006:android:ef7ae41893beee18d48acf",
+        "android_client_info": {
+          "package_name": "com.example.cng_gas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196407911006-ai82c5ol2ip8079pqtjs00dsllkoojmj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdXVgXr_fS5YtCao8slCO__WTn1Y7U27g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196407911006-ai82c5ol2ip8079pqtjs00dsllkoojmj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

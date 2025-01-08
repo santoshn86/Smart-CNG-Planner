@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/g3"
+    tools:context=".login">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/up"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manager Login"
+            android:layout_marginRight="5dp"
+            android:id="@+id/btnadmin"
+            android:onClick="admin" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Details"
+            android:id="@+id/areabtn"
+            android:layout_toRightOf="@+id/btnadmin"
+            android:onClick="viewareacode" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/ty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Customer Login"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ty"
+        android:src="@drawable/logo2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/up1"
+        android:orientation="vertical"
+        android:layout_below="@+id/img"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:padding="5dp"
+            android:backgroundTint="@android:color/white"
+            android:drawableLeft="@drawable/username"
+            android:background="@drawable/et_style"
+            android:layout_below="@+id/img"
+            android:layout_marginBottom="5dp"
+            android:hint="Name"
+            android:textAlignment="center"
+            android:inputType="textPersonName"
+
+            />
+
+        <EditText
+            android:id="@+id/phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/username"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/et_style"
+
+            android:backgroundTint="@android:color/white"
+            android:drawableLeft="@drawable/phone"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLength="10"
+            android:padding="5dp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/up1"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_style"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="5dp"
+            android:onClick="Register"
+            android:text="Register"
+            android:textAlignment="center"
+
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:id="@+id/back"
+            android:layout_toRightOf="@+id/login"
+            android:onClick="Login"
+            android:background="@drawable/et_style"
+
+            android:textAlignment="center"
+           />
+    </LinearLayout>
+
+</RelativeLayout>

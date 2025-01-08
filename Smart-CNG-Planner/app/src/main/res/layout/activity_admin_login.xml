@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/g3"
+    tools:context=".AdminLogin">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/up"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Details"
+            android:id="@+id/areabtn"
+            android:onClick="viewareacode" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Manager Login"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ty"
+        android:src="@drawable/logo2" />
+
+    <LinearLayout
+        android:id="@+id/up1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/adminuser"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/img"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/et_style"
+            android:backgroundTint="@android:color/white"
+            android:drawableLeft="@drawable/username"
+
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            android:textAlignment="center" />
+
+
+        <EditText
+            android:id="@+id/admincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/et_style"
+            android:backgroundTint="@android:color/white"
+            android:drawableLeft="@drawable/plate"
+            android:hint="Access Code"
+            android:inputType="number"
+            android:maxLength="4"
+            android:padding="5dp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/up2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/up1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/code"
+            android:onClick="login"
+            android:layout_margin="1dp"
+            android:text="Login"
+            android:background="@drawable/et_style"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/code"
+            android:layout_margin="1dp"
+            android:layout_toRightOf="@+id/login"
+            android:onClick="back"
+            android:text="Back"
+            android:background="@drawable/et_style"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

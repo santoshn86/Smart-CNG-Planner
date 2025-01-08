@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/g3"
+    android:layout_height="match_parent"
+    tools:context=".ViewArea">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/top"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text="DATE"
+                    android:layout_marginRight="5dp"
+                    android:background="@android:color/darker_gray"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:padding="1dp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:id="@+id/date"
+                    android:background="@android:color/darker_gray"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Price"
+                    android:background="@android:color/darker_gray"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:id="@+id/price"
+                    android:padding="1dp"
+                    android:background="@android:color/darker_gray"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Select Area"
+                    android:background="@android:color/darker_gray"
+                    />
+
+                <Spinner
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/area"
+                    >
+                </Spinner>
+
+
+
+            </TableRow>
+
+
+
+        </LinearLayout>
+    </TableLayout>
+
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/l1"
+        android:layout_below="@+id/top"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@android:color/holo_green_dark"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:id="@+id/a"
+                android:text="Alephata (1001)"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/white"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+
+                    android:padding="3dp"
+                    android:textColor="@android:color/white"
+                    android:text="Time Slots"
+                    android:layout_marginRight="5dp"
+                    android:background="@android:color/holo_blue_light"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:padding="3dp"
+
+                    android:textColor="@android:color/white"
+                    android:text="Slots Remain"
+                    android:background="@android:color/holo_blue_light"
+                    />
+
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginRight="5dp"
+                    android:padding="1dp"
+                    android:text="06:00 AM - 09:00 AM"
+                    android:background="@android:color/darker_gray"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:padding="1dp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:id="@+id/t1"
+                    android:background="@android:color/darker_gray"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+
+                >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+
+                    android:padding="1dp"
+                    android:text="09:00 AM - 12:00 PM"
+                    android:background="@android:color/darker_gray"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:id="@+id/t2"
+                    android:background="@android:color/darker_gray"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:textAlignment="center"
+                    android:text="12:00 PM - 03:00 PM"
+                    android:padding="1dp"
+                    android:background="@android:color/darker_gray"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:padding="1dp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:id="@+id/t3"
+                    android:background="@android:color/darker_gray"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:padding="1dp"
+                    android:layout_marginRight="5dp"
+                    android:text="03:00 PM - 06:00 PM"
+                    android:background="@android:color/darker_gray"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:id="@+id/t4"
+                    android:padding="1dp"
+                    android:background="@android:color/darker_gray"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:padding="1dp"
+                    android:layout_marginRight="5dp"
+                    android:text="06:00 PM - 09:00 PM"
+                    android:background="@android:color/darker_gray"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:id="@+id/t5"
+                    android:padding="1dp"
+                    android:background="@android:color/darker_gray"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:padding="1dp"
+                    android:layout_marginRight="5dp"
+                    android:text="09:00 PM - 12:00 PM"
+                    android:background="@android:color/darker_gray"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:padding="1dp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:id="@+id/t6"
+                    android:background="@android:color/darker_gray"
+                    />
+
+            </TableRow>
+
+
+
+
+        </LinearLayout>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/l2"
+        android:layout_below="@+id/l1"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@android:color/holo_green_dark"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:id="@+id/a2"
+                android:text="Narayangaon (1002)"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/white"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+
+                    android:padding="3dp"
+                    android:textColor="@android:color/white"
+                    android:text="Time Slots"
+                    android:layout_marginRight="5dp"
+                    android:background="@android:color/holo_blue_light"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:padding="3dp"
+
+                    android:textColor="@android:color/white"
+                    android:text="Slots Remain"
+                    android:background="@android:color/holo_blue_light"
+                    />
+
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginRight="5dp"
+                    android:padding="1dp"
+                    android:text="06:00 AM - 09:00 AM"
+                    android:background="@android:color/darker_gray"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:padding="1dp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:id="@+id/tt1"
+                    android:background="@android:color/darker_gray"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+
+                    android:padding="1dp"
+                    android:text="09:00 AM - 12:00 PM"
+                    android:background="@android:color/darker_gray"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:id="@+id/tt2"
+                    android:background="@android:color/darker_gray"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:textAlignment="center"
+                    android:text="12:00 PM - 03:00 PM"
+                    android:padding="1dp"
+                    android:background="@android:color/darker_gray"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:padding="1dp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:id="@+id/tt3"
+                    android:background="@android:color/darker_gray"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:padding="1dp"
+                    android:layout_marginRight="5dp"
+                    android:text="03:00 PM - 06:00 PM"
+                    android:background="@android:color/darker_gray"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:id="@+id/tt4"
+                    android:padding="1dp"
+                    android:background="@android:color/darker_gray"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:padding="1dp"
+                    android:layout_marginRight="5dp"
+                    android:text="06:00 PM - 09:00 PM"
+                    android:background="@android:color/darker_gray"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:id="@+id/tt5"
+                    android:padding="1dp"
+                    android:background="@android:color/darker_gray"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:padding="1dp"
+                    android:layout_marginRight="5dp"
+                    android:text="09:00 PM - 12:00 PM"
+                    android:background="@android:color/darker_gray"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:padding="1dp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:id="@+id/tt6"
+                    android:background="@android:color/darker_gray"
+                    />
+
+            </TableRow>
+
+
+
+
+        </LinearLayout>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bot"
+        android:layout_below="@+id/l2"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:onClick="BACK"
+                    android:layout_height="wrap_content"
+                    android:text="Back" />
+
+            </TableRow>
+
+        </LinearLayout>
+    </TableLayout>
+</RelativeLayout>
